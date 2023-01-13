@@ -9,12 +9,12 @@ const showSlide = (num) =>{
     if(num < slides.length) { slideIndex = slides.length}
  
     //Estrutura de repetição: for , while , do while , map
-    for(count = 0; count < slides.length; count++){
+    for(count=0; count < slides.length; count++){
      slides[count].style.display = "none";
     }
  
     //count-> 0, 1, 2 
-    for( count = 0; count < dots.length; count++) {
+    for( count=0; count < dots.length; count++) {
      dots[count].className = dots[count].className.replace("active", "")
  
     }
@@ -26,7 +26,7 @@ const showSlide = (num) =>{
 
     showSlide(slideIndex)
 
-const changSlide = (num) => {
+const changeSlide = (num) => {
     showSlides(slideIndex += num)
 }
 
