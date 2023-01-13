@@ -1,6 +1,6 @@
 let slideIndex = 1;
 
-const showSlide = (num) =>{
+const showSlides = (num) =>{
     let slides = document.getElementsByClassName('slide');
     let dots = document.getElementsByClassName('dot');
  
@@ -20,11 +20,11 @@ const showSlide = (num) =>{
     }
  
     slides[slideIndex-1].style.display="block";
-    dots[slideIndex-1].className="active";
+    dots[slideIndex-1].className += " active";
      
     }
 
-    showSlide(slideIndex);
+    showSlides(slideIndex)
 
 const changeSlide = (num) => {
     showSlides(slideIndex += num)
